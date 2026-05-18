@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Whey Protein Fusion Blend - Hitch Fit Supplements BD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  Trusted by 20,000+ Clients Worldwide | Free Delivery over BDT 5000
+</div>
+
+<div class="header">
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Hitch Fit"></a>
+  </div>
+  <div class="menu">
+    <a href="product.html">Shop All</a>
+    <a href="product.html">Proteins</a>
+    <a href="product.html">Stacks</a>
+    <a href="product.html">Pre-Workouts</a>
+    <a href="product.html">Daily Nutrition</a>
+    <a href="product.html">About</a>
+  </div>
+  <div class="cart">
+    <a href="#">Cart (<span id="cartCount">0</span>)</a>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> / <a href="product.html">Shop</a> / Whey Protein Fusion Blend
+</div>
+
+<div class="product-page">
+  <div class="product-image">
+    <img src="images/whey.png" alt="Whey Protein Fusion Blend" id="mainImage">
+    <div class="thumbs">
+      <img src="images/whey.png" alt="thumb1" onclick="changeImage('images/whey.png')">
+      <img src="images/creatine.png" alt="thumb2" onclick="changeImage('images/creatine.png')">
+      <img src="images/multivitamin.png" alt="thumb3" onclick="changeImage('images/multivitamin.png')">
+      <img src="images/amino.png" alt="thumb4" onclick="changeImage('images/amino.png')">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h1>Whey Protein Fusion Blend</h1>
+    <div class="rating-line">★★★★★ 5.0 (128 reviews)</div>
+    <p class="price-big">BDT 5,500</p>
+
+    <p class="desc">Hitch Fit Whey Protein Fusion Blend gives you 25g of high quality protein per serving. Made with a mix of whey isolate and concentrate for fast and long lasting absorption. Has digestive enzymes for better absorption and a full amino acid profile to support muscle repair, growth and recovery.</p>
+
+    <div class="option-block">
+      <p class="option-label">Flavor:</p>
+      <button class="flavor-btn active" onclick="selectFlavor(this)">Cinnamon Roll</button>
+      <button class="flavor-btn" onclick="selectFlavor(this)">Chocolate Fudge</button>
+      <button class="flavor-btn" onclick="selectFlavor(this)">Vanilla Bean</button>
+    </div>
+
+    <div class="option-block">
+      <p class="option-label">Quantity:</p>
+      <button onclick="changeQty(-1)">-</button>
+      <input type="text" id="qty" value="1" readonly>
+      <button onclick="changeQty(1)">+</button>
+    </div>
+
+    <button class="add-cart-btn" onclick="addToCart()">ADD TO CART</button>
+
+    <div class="features">
+      <p>✓ 25g protein per serving</p>
+      <p>✓ Whey isolate + concentrate blend</p>
+      <p>✓ Digestive enzymes for maximum absorption</p>
+      <p>✓ Complete amino acid profile</p>
+      <p>✓ Three delicious flavors</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-col">
+    <img src="images/logo.png" alt="Hitch Fit" class="footer-logo">
+    <p>Hitch Fit is more than physical transformation. It is about strengthening the body, mind and spirit.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Shop</h4>
+    <a href="product.html">Shop All</a><br>
+    <a href="product.html">Proteins</a><br>
+    <a href="product.html">Stacks</a><br>
+    <a href="product.html">Pre-Workouts</a><br>
+    <a href="product.html">Daily Nutrition</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="#">About Hitch Fit</a><br>
+    <a href="#">Contact Us</a><br>
+    <a href="#">Fitness Hub</a>
+  </div>
+  <div class="footer-col">
+    <h4>Support</h4>
+    <a href="#">Return Policy</a><br>
+    <a href="#">Terms of Service</a><br>
+    <a href="#">Privacy Policy</a>
+  </div>
+</div>
+
+<div class="copyright">
+  &copy; 2026 Hitch Fit Supplements BD - All Rights Reserved
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
