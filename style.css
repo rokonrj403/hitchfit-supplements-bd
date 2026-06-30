@@ -58,7 +58,8 @@ a {
 .banner {
   position: relative;
   width: 100%;
-  height: 500px;
+  aspect-ratio: 3200 / 1200;
+  max-height: 600px;
   overflow: hidden;
 }
 
@@ -66,6 +67,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .banner-text {
@@ -791,6 +794,16 @@ a {
   .menu a {
     margin: 5px;
     font-size: 12px;
+  }
+
+  .banner {
+    aspect-ratio: auto;
+    min-height: 320px;
+  }
+
+  .banner-text {
+    left: 25px;
+    right: 25px;
   }
 
   .banner-text h1 {
