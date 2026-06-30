@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout - Hitch Fit Supplements BD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  Trusted by 20,000+ Clients Worldwide | Free Delivery over BDT 5000
+</div>
+
+<div class="header">
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Hitch Fit"></a>
+  </div>
+  <div class="menu">
+    <a href="shop.html">Shop All</a>
+    <a href="shop.html?cat=proteins">Proteins</a>
+    <a href="shop.html?cat=stacks">Stacks</a>
+    <a href="shop.html?cat=pre-workout">Pre-Workouts</a>
+    <a href="shop.html?cat=daily-nutrition">Daily Nutrition</a>
+    <a href="index.html#about">About</a>
+  </div>
+  <div class="cart">
+    <a href="cart.html">Cart (<span class="cartCount">0</span>)</a>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout
+</div>
+
+<div class="cart-page">
+
+  <!-- Checkout form + order summary -->
+  <div id="checkoutMain">
+    <h1>Checkout</h1>
+    <div class="cart-layout">
+      <form class="checkout-form" onsubmit="placeOrder(event)">
+        <h3>Delivery Details</h3>
+
+        <label for="coName">Full Name *</label>
+        <input type="text" id="coName" required>
+
+        <label for="coPhone">Phone Number *</label>
+        <input type="tel" id="coPhone" placeholder="01XXXXXXXXX" required>
+
+        <label for="coEmail">Email</label>
+        <input type="email" id="coEmail" placeholder="optional">
+
+        <label for="coAddress">Delivery Address *</label>
+        <textarea id="coAddress" rows="3" placeholder="House, road, area" required></textarea>
+
+        <label for="coCity">City / District *</label>
+        <input type="text" id="coCity" required>
+
+        <h3>Payment Method</h3>
+        <label class="pay-option">
+          <input type="radio" name="payment" value="Cash on Delivery" checked>
+          Cash on Delivery
+        </label>
+        <label class="pay-option">
+          <input type="radio" name="payment" value="bKash">
+          bKash
+        </label>
+        <label class="pay-option">
+          <input type="radio" name="payment" value="Nagad">
+          Nagad
+        </label>
+
+        <label for="coNotes">Order Notes</label>
+        <textarea id="coNotes" rows="2" placeholder="Anything we should know? (optional)"></textarea>
+
+        <button type="submit" class="add-cart-btn">PLACE ORDER</button>
+      </form>
+
+      <div class="cart-summary">
+        <h3>Order Summary</h3>
+        <div id="checkoutSummary"></div>
+        <a href="cart.html" class="continue-link">Edit Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation (shown after placing the order) -->
+  <div id="orderConfirm" class="order-confirm" style="display:none;">
+    <div class="confirm-check">&#10003;</div>
+    <h1>Thank You for Your Order!</h1>
+    <p class="confirm-sub">Your order has been placed successfully.</p>
+    <div class="confirm-box">
+      <div class="summary-line"><span>Order Number</span><span id="confirmNumber"></span></div>
+      <div class="summary-line"><span>Total</span><span id="confirmTotal"></span></div>
+      <div class="summary-line"><span>Payment</span><span id="confirmPayment"></span></div>
+    </div>
+    <p class="confirm-note">We will call you shortly to confirm delivery. Free delivery on orders over BDT 5,000.</p>
+    <a href="shop.html" class="btn">Continue Shopping</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-col">
+    <img src="images/logo.png" alt="Hitch Fit" class="footer-logo">
+    <p>Hitch Fit is more than physical transformation. It is about strengthening the body, mind and spirit.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Shop</h4>
+    <a href="shop.html">Shop All</a><br>
+    <a href="shop.html?cat=proteins">Proteins</a><br>
+    <a href="shop.html?cat=stacks">Stacks</a><br>
+    <a href="shop.html?cat=pre-workout">Pre-Workouts</a><br>
+    <a href="shop.html?cat=daily-nutrition">Daily Nutrition</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="#">About Hitch Fit</a><br>
+    <a href="#">Contact Us</a><br>
+    <a href="#">Fitness Hub</a>
+  </div>
+  <div class="footer-col">
+    <h4>Support</h4>
+    <a href="#">Return Policy</a><br>
+    <a href="#">Terms of Service</a><br>
+    <a href="#">Privacy Policy</a>
+  </div>
+</div>
+
+<div class="copyright">
+  &copy; 2026 Hitch Fit Supplements BD - All Rights Reserved
+</div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

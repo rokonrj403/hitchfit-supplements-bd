@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product - Hitch Fit Supplements BD</title>
+<title>Shop All - Hitch Fit Supplements BD</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,11 +27,24 @@
   </div>
 </div>
 
-<div class="breadcrumb" id="breadcrumb">
-  <a href="index.html">Home</a> / <a href="shop.html">Shop</a>
+<div class="breadcrumb">
+  <a href="index.html">Home</a> / Shop
 </div>
 
-<div class="product-page" id="productDetail"></div>
+<div class="section">
+  <h2>Shop All Supplements</h2>
+  <p class="sub">Clean, premium formulas for every goal</p>
+
+  <div class="filters">
+    <button class="filter-tab" data-filter="all" onclick="renderShop('all')">All</button>
+    <button class="filter-tab" data-filter="proteins" onclick="renderShop('proteins')">Proteins</button>
+    <button class="filter-tab" data-filter="pre-workout" onclick="renderShop('pre-workout')">Pre-Workouts &amp; More</button>
+    <button class="filter-tab" data-filter="daily-nutrition" onclick="renderShop('daily-nutrition')">Daily Nutrition</button>
+    <button class="filter-tab" data-filter="stacks" onclick="renderShop('stacks')">Stacks</button>
+  </div>
+
+  <div class="products" id="shopGrid"></div>
+</div>
 
 <div class="footer">
   <div class="footer-col">
@@ -66,5 +79,14 @@
 
 <script src="products.js"></script>
 <script src="script.js"></script>
+<script>
+  // Apply category from URL (?cat=proteins) on load
+  var cat = new URLSearchParams(window.location.search).get("cat");
+  if (cat) {
+    document.addEventListener("DOMContentLoaded", function () {
+      renderShop(cat);
+    });
+  }
+</script>
 </body>
 </html>

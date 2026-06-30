@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product - Hitch Fit Supplements BD</title>
+<title>Your Cart - Hitch Fit Supplements BD</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,11 +27,41 @@
   </div>
 </div>
 
-<div class="breadcrumb" id="breadcrumb">
-  <a href="index.html">Home</a> / <a href="shop.html">Shop</a>
+<div class="breadcrumb">
+  <a href="index.html">Home</a> / Cart
 </div>
 
-<div class="product-page" id="productDetail"></div>
+<div class="cart-page">
+  <h1>Your Cart</h1>
+
+  <div id="cartEmpty" class="cart-empty" style="display:none;">
+    <p>Your cart is empty.</p>
+    <a href="shop.html" class="btn">Continue Shopping</a>
+  </div>
+
+  <div class="cart-layout">
+    <div id="cartItems"></div>
+
+    <div id="cartSummary" class="cart-summary">
+      <h3>Order Summary</h3>
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <span id="subtotalValue">BDT 0</span>
+      </div>
+      <div class="summary-line">
+        <span>Delivery</span>
+        <span id="deliveryValue">FREE</span>
+      </div>
+      <div class="summary-line summary-total">
+        <span>Total</span>
+        <span id="totalValue">BDT 0</span>
+      </div>
+      <p class="summary-note">Free delivery on orders over BDT 5,000</p>
+      <button class="add-cart-btn" onclick="checkout()">CHECKOUT</button>
+      <a href="shop.html" class="continue-link">Continue Shopping</a>
+    </div>
+  </div>
+</div>
 
 <div class="footer">
   <div class="footer-col">
