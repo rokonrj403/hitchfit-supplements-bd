@@ -68,5 +68,5 @@ python3 -m http.server
   A production version would send orders to a server.
 - Product prices were converted from USD at roughly **120 BDT per USD**, rounded
   to the nearest 100.
-- A few product images reuse existing placeholders; swap in real images in the
-  `images/` folder and update the `image` field in `products.js`.
+- Each of the 16 products has its own product image in the `images/` folder,
+  referenced by the `image` field in `products.js`.
